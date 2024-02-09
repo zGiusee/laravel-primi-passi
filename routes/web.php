@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/', function () {
+    $welcome = 'Hello Laravel!';
+    return view('home', compact('welcome'));
 })->name('home');
+
+Route::get('/studenti', function () {
+    $welcome = 'Hello Students!';
+    return view('home', compact('welcome', 'home'));
+})->name('studenti');
+
+Route::get('/insegnanti', function () {
+    $welcome = 'Hello Teachers!';
+    return view('home', compact('welcome'));
+})->name('insegnanti');

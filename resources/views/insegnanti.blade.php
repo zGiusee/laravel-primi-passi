@@ -16,6 +16,7 @@
             <div class="col-6">
                 <div>
                     <h1> {{ $welcome }}</h1>
+
                 </div>
             </div>
             <div class="col-6">
