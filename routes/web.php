@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/studenti', function () {
     $welcome = 'Hello Students!';
-    return view('home', compact('welcome', 'home'));
+    return view('home', compact('welcome'));
 })->name('studenti');
 
 Route::get('/insegnanti', function () {
